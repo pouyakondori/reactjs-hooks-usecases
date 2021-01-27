@@ -1,10 +1,10 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route  } from 'react-router-dom'
-import useReducerExample1 from './pages/useReducer1/useReducerBefore'
-import useReducerExample2 from './pages/useReducer1/useReducer'
-
-import useRefExample from './pages/useRef'
 import HomePage from './pages/HomePage'
+import useRefExample from './pages/useREf/useRef'
+import useReducerEx1Before from './pages/useReducerEx1/useReducerEx1Before'
+import useReducerEx1 from './pages/useReducerEx1/useReducerEx1'
+import useReducerEx2 from './pages/useReducerEx2/useReducerEx2'
 
 export default function App() {
   return (
@@ -13,9 +13,10 @@ export default function App() {
       <div>
         <Switch>
           <Route path="/" exact component={HomePage} />
-          <Route path="/useReducer1" component={useReducerExample1} />
-          <Route path="/useReducer2" component={useReducerExample2} />
           <Route path="/useRef" component={useRefExample} />
+          <Route path="/useReducerEx1Before" component={useReducerEx1Before} />
+          <Route path="/useReducerEx1" component={useReducerEx1} />
+          <Route path="/useReducerEx2" component={useReducerEx2} />
         </Switch>
       </div>
     </Router>
