@@ -7,7 +7,7 @@ import useReducerEx1 from './pages/useReducerEx1/useReducerEx1'
 import useReducerEx2 from './pages/useReducerEx2/useReducerEx2'
 import useMemoEx1 from './pages/useMemoEx1/useMemoEx1'
 import useCallbackEx1 from './pages/useCallbackEx1/useCallbackEx1'
-
+import useLocalStorageEx1 from './pages/useLocalStorageEx1/useLocalStorageEx1'
 export default function App() {
   return (
     <div className="App">
@@ -21,6 +21,7 @@ export default function App() {
           <Route path="/useReducerEx2" component={useReducerEx2} />
           <Route path="/useMemoEx1" component={useMemoEx1} />         
           <Route path="/useCallbackEx1" component={useCallbackEx1} />         
+          <Route path="/useLocalStorageEx1" component={useLocalStorageEx1} />         
           </Switch>
       </div>
     </Router>
