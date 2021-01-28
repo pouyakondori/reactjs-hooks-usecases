@@ -5,6 +5,7 @@ import useRefExample from './pages/useREf/useRef'
 import useReducerEx1Before from './pages/useReducerEx1/useReducerEx1Before'
 import useReducerEx1 from './pages/useReducerEx1/useReducerEx1'
 import useReducerEx2 from './pages/useReducerEx2/useReducerEx2'
+import useMemoEx1 from './pages/useMemoEx1/useMemoEx1'
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="/useReducerEx1Before" component={useReducerEx1Before} />
           <Route path="/useReducerEx1" component={useReducerEx1} />
           <Route path="/useReducerEx2" component={useReducerEx2} />
+          <Route path="/useMemoEx1" component={useMemoEx1} />         
         </Switch>
       </div>
     </Router>
